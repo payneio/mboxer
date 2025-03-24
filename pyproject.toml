@@ -1,0 +1,20 @@
+[project]
+name = "mbox-exporter"
+version = "0.1.0"
+description = "Export .mbox messages to .eml with clean filenames"
+dependencies = ["python-dotenv"]
+requires-python = ">=3.8"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+  "D",      # Docstrings
+  "ANN",    # Missing type hints
+  "COM812", # Trailing commas
+  "ISC001", # Implicit string concat
+  "T201",   # Allow print() (optional — or fix it)
+  "BLE001", # Allow bare Exception (or fix)
+  "PTH103", # Optional: suppress Path suggestions if you prefer os.*
+  "PTH118",
+  "PTH123",
+]
